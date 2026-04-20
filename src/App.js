@@ -459,7 +459,7 @@ function PageContact() {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    await fetch("https://n8n.srv980557.hstgr.cloud/webhook-test/formulaire-lokka", {
+    await fetch("https://n8n.srv980557.hstgr.cloud/webhook/formulaire-lokka", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
