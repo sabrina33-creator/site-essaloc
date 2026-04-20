@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import bxPhoto from "./bx.jpg";
 import dune from "./dune.jpg" ;
 import interieur from "./interieur.jpg" ;
+import merignac from "./merignac.jpg"
+import talence from "./talence.png"
+import chambre from "./chambre.jpg"
 /* ═══════════════════════════════════════
    LOKKA — Site Complet
    Conciergerie & Sous-location · Bordeaux
@@ -20,12 +23,12 @@ const EMAIL = "contact@lokka.fr";
 const IMG = {
   hero: interieur,
   salon: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
-  chambre: "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=800&q=80",
-  salon2: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
-  sdb: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80",
+  chambre: merignac,
+  salon2: talence,
+  sdb: chambre,
  bordeaux: dune,
 bordeaux2: bxPhoto,
-cozy: "https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=800&q=80",
+cozy: chambre,
 };
 
 // ── Animation scroll ──
@@ -133,7 +136,7 @@ function Footer({ setPage }) {
         <div style={{ display: "flex", flexWrap: "wrap", gap: 48, marginBottom: 48 }}>
           <div style={{ flex: "1 1 280px" }}>
             <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 24, fontWeight: 700, color: C.cream }}>Lokka</span>
-            <p style={{ fontSize: 14, lineHeight: 1.7, color: C.sand, maxWidth: 300, marginTop: 16 }}>Conciergerie et sous-location professionnelle à Bordeaux. Votre logement entre de bonnes mains.</p>
+            <p style={{ fontSize: 14, lineHeight: 1.7, color: C.sand, maxWidth: 300, marginTop: 16 }}>Conciergerie Bordeaux & sous-location professionnelle. Gestion locative courte durée pour propriétaires bordelais.</p>
           </div>
           <div style={{ flex: "1 1 140px" }}>
             <h4 style={{ fontSize: 12, fontWeight: 700, color: C.cream, letterSpacing: 1.5, marginBottom: 18, textTransform: "uppercase" }}>Navigation</h4>
@@ -153,17 +156,17 @@ function Footer({ setPage }) {
 // ══════════ PAGE ACCUEIL ══════════
 function PageAccueil({ setPage }) {
   const problemes = [
-    { icon: <Ico.Clock s={24}/>, title: "Gestion chronophage", desc: "Annonces, voyageurs, ménage... La gestion locative peut vite devenir un second travail." },
-    { icon: <Ico.AlertCircle s={24}/>, title: "Vacance locative", desc: "Un logement vide, c'est un loyer perdu. Chaque jour non loué impacte votre rentabilité." },
-    { icon: <Ico.Chart s={24}/>, title: "Rentabilité insuffisante", desc: "Sans optimisation des tarifs et de l'occupation, votre bien ne rapporte pas ce qu'il pourrait." },
-    { icon: <Ico.Heart s={24}/>, title: "Stress locatif", desc: "Gérer les imprévus, les réclamations, l'entretien à distance... La charge mentale s'accumule." },
+    { icon: <Ico.Clock s={24}/>, title: "Gestion chronophage", desc: "Annonces, check-in, ménage... La gestion locative courte durée à Bordeaux peut vite devenir un second travail." },
+    { icon: <Ico.AlertCircle s={24}/>, title: "Vacance locative", desc: "Un logement vide, c'est un loyer perdu. Chaque nuit non réservée pèse sur votre rentabilité." },
+    { icon: <Ico.Chart s={24}/>, title: "Revenus sous-optimisés", desc: "Sans bonne stratégie tarifaire, votre location Airbnb Bordeaux ne rapporte pas ce qu'elle pourrait." },
+    { icon: <Ico.Heart s={24}/>, title: "Charge mentale", desc: "Imprévus, réclamations, entretien à distance... La pression s'accumule et vous épuise." },
   ];
 
   const valeurs = [
-    { icon: <Ico.Shield s={28}/>, title: "Sérénité", desc: "Nous gérons tout pour vous. Vous n'avez rien à faire." },
-    { icon: <Ico.TrendUp s={28}/>, title: "Rentabilité", desc: "Optimisation des revenus de votre bien immobilier." },
-    { icon: <Ico.Eye s={28}/>, title: "Transparence", desc: "Suivi clair, aucun frais caché, communication fluide." },
-    { icon: <Ico.Users s={28}/>, title: "Gestion professionnelle", desc: "Un service soigné et rigoureux, comme pour notre propre logement." },
+    { icon: <Ico.Shield s={28}/>, title: "Sérénité totale", desc: "Nous gérons tout à votre place. Conciergerie Bordeaux complète, sans que vous ayez à intervenir." },
+    { icon: <Ico.TrendUp s={28}/>, title: "Revenus optimisés", desc: "Tarification dynamique, taux d'occupation maximisé : votre location Airbnb Bordeaux performe vraiment." },
+    { icon: <Ico.Eye s={28}/>, title: "Transparence", desc: "Suivi clair, aucun frais caché, communication directe. On vous tient informé à chaque étape." },
+    { icon: <Ico.Users s={28}/>, title: "Service professionnel", desc: "On gère votre bien comme si c'était le nôtre. Rigoureux, soigné, fiable." },
   ];
 
   return (<div>
@@ -181,12 +184,12 @@ function PageAccueil({ setPage }) {
         </FadeIn>
         <FadeIn delay={0.15}>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(34px,6vw,54px)", fontWeight: 700, color: C.white, lineHeight: 1.15, marginBottom: 20 }}>
-            Votre bien mérite<br/>une gestion <span style={{ color: "#D4956B", fontStyle: "italic" }}>à la hauteur</span>
+            Conciergerie & sous-location<br/>professionnelle à <span style={{ color: "#D4956B", fontStyle: "italic" }}>Bordeaux</span>
           </h1>
         </FadeIn>
         <FadeIn delay={0.3}>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.85)", lineHeight: 1.7, maxWidth: 500, marginBottom: 36 }}>
-            Accompagnement des propriétaires dans la gestion et l'optimisation de leurs biens immobiliers en toute sérénité.
+            Vous êtes propriétaire ? On gère tout. Revenus garantis, zéro stress, zéro gestion.
           </p>
         </FadeIn>
         <FadeIn delay={0.45}>
@@ -231,10 +234,10 @@ function PageAccueil({ setPage }) {
             Une ville qui <span style={{ color: C.terra, fontStyle: "italic" }}>attire</span>
           </h2>
           <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8, marginBottom: 16 }}>
-            Patrimoine classé UNESCO, gastronomie, vignobles, climat agréable : Bordeaux est l'une des destinations les plus prisées de France. La demande en location courte durée ne cesse de croître.
+            Patrimoine UNESCO, gastronomie, vignobles : Bordeaux est l'une des villes les plus demandées en location Airbnb en France. Le marché de la gestion locative courte durée Bordeaux est en pleine croissance.
           </p>
           <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8 }}>
-            Que vous possédiez un appartement en centre-ville ou une maison en périphérie, votre bien a un potentiel locatif que nous pouvons optimiser.
+            Appartement en centre-ville ou maison en périphérie — votre bien a un potentiel que nous savons exploiter.
           </p>
         </FadeIn>
       </div>
@@ -253,8 +256,8 @@ function PageAccueil({ setPage }) {
           <FadeIn delay={0.1}>
             <div style={{ background: C.white, borderRadius: 24, padding: "40px 32px", boxShadow: "0 4px 24px rgba(0,0,0,0.05)", height: "100%", borderTop: `4px solid ${C.terra}` }}>
               <div style={{ width: 56, height: 56, borderRadius: 16, background: `${C.terra}12`, display: "flex", alignItems: "center", justifyContent: "center", color: C.terra, marginBottom: 20 }}><Ico.Home s={28}/></div>
-              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, fontWeight: 700, color: C.dark, marginBottom: 12 }}>Sous-location professionnelle</h3>
-              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Un loyer garanti chaque mois, sans aucune gestion de votre part. Nous louons votre bien en courte durée via un contrat professionnel sécurisé.</p>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, fontWeight: 700, color: C.dark, marginBottom: 12 }}>Sous-location professionnelle Bordeaux</h3>
+              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Un loyer garanti chaque mois, sans aucune gestion de votre part. Nous assurons la gestion locative courte durée Bordeaux via un contrat professionnel sécurisé.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 {["Loyer garanti mensuel", "Zéro vacance locative", "Gestion complète prise en charge", "Contrat professionnel sécurisé", "Stabilité financière", "Mise en valeur du logement"].map((t,i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 10 }}><Ico.Check/><span style={{ fontSize: 14, color: C.dark }}>{t}</span></div>
@@ -266,8 +269,8 @@ function PageAccueil({ setPage }) {
           <FadeIn delay={0.2}>
             <div style={{ background: C.white, borderRadius: 24, padding: "40px 32px", boxShadow: "0 4px 24px rgba(0,0,0,0.05)", height: "100%", borderTop: `4px solid ${C.sage}` }}>
               <div style={{ width: 56, height: 56, borderRadius: 16, background: `${C.sage}15`, display: "flex", alignItems: "center", justifyContent: "center", color: C.sage, marginBottom: 20 }}><Ico.Key s={28}/></div>
-              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, fontWeight: 700, color: C.dark, marginBottom: 12 }}>Conciergerie</h3>
-              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Gestion complète de votre location courte durée. De l'accueil des voyageurs à l'optimisation de vos revenus, nous prenons tout en main.</p>
+              <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, fontWeight: 700, color: C.dark, marginBottom: 12 }}>Conciergerie Bordeaux</h3>
+              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Gestion complète de votre location Airbnb Bordeaux. De l'accueil des voyageurs à l'optimisation de vos revenus, nous prenons tout en main.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 {["Check-in / check-out voyageurs", "Ménage & linge de qualité", "Optimisation des revenus", "Gestion Airbnb complète", "Communication voyageurs", "Amélioration de la rentabilité"].map((t,i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 10 }}><Ico.Check/><span style={{ fontSize: 14, color: C.dark }}>{t}</span></div>
@@ -309,8 +312,8 @@ function PageAccueil({ setPage }) {
     {/* ── CTA FINAL ── */}
     <section style={{ padding: "80px 24px", textAlign: "center", background: `linear-gradient(135deg, ${C.sageDark} 0%, ${C.sage} 100%)`, marginTop: 80 }}>
       <FadeIn>
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,36px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Propriétaire à Bordeaux ?</h2>
-        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Discutons de votre projet. Premier échange gratuit et sans engagement.</p>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,36px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Propriétaire à Bordeaux ? Parlons-en.</h2>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location professionnelle ou conciergerie Bordeaux — on vous explique ce qui correspond le mieux à votre situation. Gratuit, sans engagement.</p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
           <Btn href={PHONE} bg={C.white} color={C.sageDark}><Ico.Phone/> Appeler maintenant</Btn>
           <Btn onClick={() => { setPage("contact"); window.scrollTo({ top: 0 }); }} bg="transparent" color={C.white} border="2px solid rgba(255,255,255,0.5)" style={{ boxShadow: "none" }}><Ico.Mail/> Remplir le formulaire</Btn>
@@ -346,9 +349,9 @@ function PageServices({ setPage }) {
       <FadeIn>
         <span style={{ fontSize: 12, color: C.sage, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }}>Nos services</span>
         <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(32px,5vw,48px)", fontWeight: 700, color: C.dark, marginTop: 12, marginBottom: 20 }}>
-          Deux solutions, <span style={{ color: C.terra, fontStyle: "italic" }}>un même engagement</span>
+          Sous-location & conciergerie<br/><span style={{ color: C.terra, fontStyle: "italic" }}>à Bordeaux</span>
         </h1>
-        <p style={{ fontSize: 17, color: C.darkSoft, lineHeight: 1.7, maxWidth: 560, margin: "0 auto" }}>Nous accompagnons les propriétaires bordelais avec des services clairs, professionnels et adaptés à chaque situation.</p>
+        <p style={{ fontSize: 17, color: C.darkSoft, lineHeight: 1.7, maxWidth: 560, margin: "0 auto" }}>Deux services pensés pour les propriétaires bordelais. Simples, professionnels, adaptés à votre situation.</p>
       </FadeIn>
     </section>
 
@@ -362,13 +365,13 @@ function PageServices({ setPage }) {
                 <Ico.Home s={16}/><span style={{ fontSize: 12, color: C.terra, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase" }}>Service 1</span>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(28px,4vw,36px)", fontWeight: 700, color: C.dark, lineHeight: 1.25, marginBottom: 16 }}>
-                Sous-location <span style={{ color: C.terra, fontStyle: "italic" }}>professionnelle</span>
+                Sous-location professionnelle <span style={{ color: C.terra, fontStyle: "italic" }}>Bordeaux</span>
               </h2>
               <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8, marginBottom: 8 }}>
-                Le principe est simple : vous nous confiez votre logement via un bail professionnel. Nous le louons en courte durée et vous percevez un loyer fixe chaque mois, garanti et sans surprise.
+                Vous nous confiez votre logement via un bail professionnel. Nous assurons la gestion locative courte durée Bordeaux à votre place : annonces, voyageurs, ménage. Vous percevez un loyer fixe chaque mois, garanti.
               </p>
               <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8 }}>
-                Vous n'avez aucune gestion à assurer. Pas de vacance locative, pas de stress. Juste des revenus réguliers et un bien entretenu avec soin.
+                Pas de vacance locative. Pas de gestion. Juste des revenus réguliers et un bien entretenu avec soin.
               </p>
             </div>
             <div style={{ flex: "1 1 360px", borderRadius: 20, overflow: "hidden" }}>
@@ -403,13 +406,13 @@ function PageServices({ setPage }) {
                 <Ico.Key s={16}/><span style={{ fontSize: 12, color: C.sageDark, fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase" }}>Service 2</span>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(28px,4vw,36px)", fontWeight: 700, color: C.dark, lineHeight: 1.25, marginBottom: 16 }}>
-                Conciergerie
+                Conciergerie <span style={{ color: C.sageDark, fontStyle: "italic" }}>Bordeaux</span>
               </h2>
               <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8, marginBottom: 8 }}>
-                Vous restez propriétaire et décidez de vos disponibilités. Nous gérons l'intégralité de la location courte durée pour vous : annonces Airbnb et plateformes, accueil voyageurs, ménage, linge, communication.
+                Vous restez maître de votre calendrier. Nous prenons en charge l'intégralité de la gestion locative courte durée Bordeaux : annonces, accueil voyageurs, ménage, linge, communication.
               </p>
               <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8 }}>
-                Notre objectif : maximiser vos revenus tout en offrant une expérience irréprochable à vos voyageurs.
+                Résultat : une location Airbnb Bordeaux qui tourne sans effort de votre part, avec des revenus optimisés.
               </p>
             </div>
             <div style={{ flex: "1 1 360px", borderRadius: 20, overflow: "hidden" }}>
@@ -437,8 +440,8 @@ function PageServices({ setPage }) {
     {/* CTA */}
     <section style={{ padding: "80px 24px", textAlign: "center", background: `linear-gradient(135deg, ${C.sageDark} 0%, ${C.sage} 100%)` }}>
       <FadeIn>
-        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,34px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Vous êtes propriétaire ? Parlons de votre projet.</h2>
-        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Premier échange gratuit et sans engagement.</p>
+        <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,34px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Propriétaire à Bordeaux ? Parlons de votre projet.</h2>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location professionnelle ou conciergerie Bordeaux — on vous guide vers la meilleure option. Premier échange gratuit.</p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
           <Btn href={PHONE} bg={C.white} color={C.sageDark}><Ico.Phone/> Appeler maintenant</Btn>
           <Btn onClick={() => { setPage("contact"); window.scrollTo({ top: 0 }); }} bg="transparent" color={C.white} border="2px solid rgba(255,255,255,0.5)" style={{ boxShadow: "none" }}><Ico.Mail/> Remplir le formulaire</Btn>
@@ -453,8 +456,31 @@ function PageContact() {
   const [form, setForm] = useState({ nom:"", prenom:"", tel:"", email:"", adresse:"", ville:"", type:"", pieces:"", dates:"", message:"", photos: null });
   const [submitted, setSubmitted] = useState(false);
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true); setTimeout(() => setSubmitted(false), 5000); };
-  const inp = { width: "100%", padding: "14px 18px", borderRadius: 12, background: C.warmWhite, border: `1.5px solid ${C.beige}`, fontSize: 15, color: C.dark, transition: "border-color 0.3s" };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    await fetch("https://n8n.srv980557.hstgr.cloud/webhook-test/formulaire-lokka", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        nom: form.nom,
+        prenom: form.prenom,
+        tel: form.tel,
+        email: form.email,
+        adresse: form.adresse,
+        ville: form.ville,
+        type: form.type,
+        pieces: form.pieces,
+        dates: form.dates,
+        message: form.message
+      })
+    });
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+  } catch (err) {
+    console.error("Erreur envoi formulaire:", err);
+  }
+};  const inp = { width: "100%", padding: "14px 18px", borderRadius: 12, background: C.warmWhite, border: `1.5px solid ${C.beige}`, fontSize: 15, color: C.dark, transition: "border-color 0.3s" };
   const lab = { fontSize: 13, fontWeight: 600, color: C.darkSoft, marginBottom: 6, display: "block" };
 
   return (<div>
@@ -468,9 +494,9 @@ function PageContact() {
         <FadeIn>
           <span style={{ fontSize: 12, color: "rgba(255,255,255,0.7)", fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }}>Contact</span>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(32px,5vw,48px)", fontWeight: 700, color: C.white, marginTop: 12, marginBottom: 16 }}>
-            Parlons de <span style={{ fontStyle: "italic" }}>votre projet</span>
+            Parlons de <span style={{ fontStyle: "italic" }}>votre logement</span>
           </h1>
-          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.85)", maxWidth: 480, margin: "0 auto" }}>Remplissez le formulaire ci-dessous, nous vous recontactons sous 24h.</p>
+          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.85)", maxWidth: 480, margin: "0 auto" }}>Conciergerie ou sous-location professionnelle à Bordeaux — réponse sous 24h, sans engagement.</p>
         </FadeIn>
       </div>
     </section>
