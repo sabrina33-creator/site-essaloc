@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import logoSvg from "./logo.svg";
 import bxPhoto from "./bx.jpg";
-import dune from "./dune.jpg" ;
+import chateau from "./chateau.jpg" ;
 import interieur from "./interieur.jpg" ;
 import merignac from "./merignac.jpg"
 import talence from "./talence.png"
@@ -18,7 +19,7 @@ const C = {
 
 const PHONE = "tel:+33637149599";
 const PHONE_DISPLAY = "+33 6 37 14 95 99";
-const EMAIL = "contact@lokka.fr";
+const EMAIL = "lokkaconciergerie@gmail.com";
 
 const IMG = {
   hero: interieur,
@@ -26,8 +27,8 @@ const IMG = {
   chambre: merignac,
   salon2: talence,
   sdb: chambre,
- bordeaux: dune,
-bordeaux2: bxPhoto,
+ bordeaux: bxPhoto,
+bordeaux2: chateau,
 cozy: chambre,
 };
 
@@ -84,15 +85,7 @@ function Header({ page, setPage }) {
     <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, background: scrolled ? "rgba(245,240,232,0.96)" : "transparent", backdropFilter: scrolled ? "blur(14px)" : "none", borderBottom: scrolled ? `1px solid ${C.beige}` : "1px solid transparent", transition: "all 0.4s" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         <div onClick={() => goTo("accueil")} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
-          <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-            <rect width="40" height="40" rx="10" fill={C.sage}/>
-            <path d="M14 28V18.5C14 14.36 17.36 11 21.5 11C25.64 11 29 14.36 29 18.5C29 22.64 25.64 26 21.5 26H20V28C20 29.1 19.1 30 18 30H16C14.9 30 14 29.1 14 28Z" fill="white" fillOpacity="0.9"/>
-            <circle cx="22" cy="18" r="2.5" fill={C.sage}/>
-          </svg>
-          <div>
-            <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 26, fontWeight: 700, color: C.dark, letterSpacing: "-0.5px" }}>Lokka</span>
-            <div style={{ fontSize: 9, color: C.sand, letterSpacing: 1.5, fontWeight: 500, marginTop: -2, textTransform: "uppercase" }}>Conciergerie · Bordeaux</div>
-          </div>
+          <img src={logoSvg} alt="Lokka Conciergerie Bordeaux" style={{ height: 45, width: "auto" }} />
         </div>
         <nav className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 32 }}>
           {links.map(n => (<span key={n.id} onClick={() => goTo(n.id)} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer", color: page === n.id ? C.terra : C.darkSoft, borderBottom: page === n.id ? `2px solid ${C.terra}` : "2px solid transparent", paddingBottom: 4, transition: "all 0.3s" }}>{n.label}</span>))}
