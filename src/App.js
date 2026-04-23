@@ -17,8 +17,8 @@ const C = {
   dark: "#2C2C2C", darkSoft: "#4A4A45", white: "#FFFFFF",
 };
 
-const PHONE = "tel:+33637149599";
-const PHONE_DISPLAY = "+33 6 37 14 95 99";
+const PHONE = "tel:+33783376293";
+const PHONE_DISPLAY = "+33 6 83 37 62 93";
 const EMAIL = "lokkaconciergerie@gmail.com";
 
 const IMG = {
