@@ -89,8 +89,8 @@ function Header({ page, setPage }) {
             <img src={logoSvg} alt="" style={{ height: 42, width: "auto" }} />
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: C.dark, letterSpacing: "-0.3px", lineHeight: 1 }}>Loya</span>
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 600, color: C.sageDark, letterSpacing: "2.5px", textTransform: "uppercase", lineHeight: 1 }}>Conciergerie · Bordeaux</span>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: scrolled ? C.dark : C.white, letterSpacing: "-0.3px", lineHeight: 1, textShadow: scrolled ? "none" : "0 1px 6px rgba(0,0,0,0.45)" }}>Loya</span>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 600, color: scrolled ? C.sageDark : "rgba(255,255,255,0.88)", letterSpacing: "2.5px", textTransform: "uppercase", lineHeight: 1, textShadow: scrolled ? "none" : "0 1px 4px rgba(0,0,0,0.5)" }}>Conciergerie · Bordeaux</span>
           </div>
         </div>
         <nav className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 32 }}>
