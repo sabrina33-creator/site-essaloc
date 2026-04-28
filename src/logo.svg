@@ -13,8 +13,8 @@
     <rect x="68" y="9" width="15" height="16" fill="white" rx="2"/>
   </g>
 
-  <!-- LOKKA wordmark -->
-  <text x="222" y="122" font-family="Georgia, serif" font-weight="700" font-size="108" fill="#2C2C2C" letter-spacing="-1">Lokka</text>
+  <!-- LOYA wordmark -->
+  <text x="222" y="122" font-family="Georgia, serif" font-weight="700" font-size="108" fill="#2C2C2C" letter-spacing="-1">Loya</text>
 
   <!-- Tagline -->
   <text x="224" y="168" font-family="Arial, sans-serif" font-size="34" fill="#B5A99A" letter-spacing="2">CONCIERGERIE · BORDEAUX</text>

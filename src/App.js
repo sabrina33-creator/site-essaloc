@@ -19,7 +19,7 @@ const C = {
 
 const PHONE = "tel:+33783376293";
 const PHONE_DISPLAY = "+33 6 83 37 62 93";
-const EMAIL = "lokkaconciergerie@gmail.com";
+const EMAIL = "loya.conciergerie@gmail.com";
 
 const IMG = {
   hero: interieur,
@@ -85,7 +85,7 @@ function Header({ page, setPage }) {
     <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, background: scrolled ? "rgba(245,240,232,0.96)" : "transparent", backdropFilter: scrolled ? "blur(14px)" : "none", borderBottom: scrolled ? `1px solid ${C.beige}` : "1px solid transparent", transition: "all 0.4s" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         <div onClick={() => goTo("accueil")} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
-          <img src={logoSvg} alt="Lokka Conciergerie Bordeaux" style={{ height: 45, width: "auto" }} />
+          <img src={logoSvg} alt="Loya Conciergerie Bordeaux" style={{ height: 45, width: "auto" }} />
         </div>
         <nav className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 32 }}>
           {links.map(n => (<span key={n.id} onClick={() => goTo(n.id)} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer", color: page === n.id ? C.terra : C.darkSoft, borderBottom: page === n.id ? `2px solid ${C.terra}` : "2px solid transparent", paddingBottom: 4, transition: "all 0.3s" }}>{n.label}</span>))}
@@ -128,7 +128,7 @@ function Footer({ setPage }) {
       <div style={{ maxWidth: 1000, margin: "0 auto" }}>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 48, marginBottom: 48 }}>
           <div style={{ flex: "1 1 280px" }}>
-            <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 24, fontWeight: 700, color: C.cream }}>Lokka</span>
+            <span style={{ fontFamily: "'Playfair Display',serif", fontSize: 24, fontWeight: 700, color: C.cream }}>Loya</span>
             <p style={{ fontSize: 14, lineHeight: 1.7, color: C.sand, maxWidth: 300, marginTop: 16 }}>Conciergerie Bordeaux & sous-location professionnelle. Gestion locative courte durée pour propriétaires bordelais.</p>
           </div>
           <div style={{ flex: "1 1 140px" }}>
@@ -140,7 +140,7 @@ function Footer({ setPage }) {
             <p style={{ fontSize: 14, color: C.sand, lineHeight: 2 }}>Bordeaux & alentours<br/>{PHONE_DISPLAY}<br/>{EMAIL}</p>
           </div>
         </div>
-        <div style={{ borderTop: "1px solid rgba(196,179,154,0.15)", paddingTop: 24, textAlign: "center", fontSize: 12, color: "rgba(196,179,154,0.4)" }}>© 2026 Lokka — Tous droits réservés</div>
+        <div style={{ borderTop: "1px solid rgba(196,179,154,0.15)", paddingTop: 24, textAlign: "center", fontSize: 12, color: "rgba(196,179,154,0.4)" }}>© 2026 Loya — Tous droits réservés</div>
       </div>
     </footer>
   );
