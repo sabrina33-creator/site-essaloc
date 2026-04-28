@@ -85,7 +85,13 @@ function Header({ page, setPage }) {
     <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, background: scrolled ? "rgba(245,240,232,0.96)" : "transparent", backdropFilter: scrolled ? "blur(14px)" : "none", borderBottom: scrolled ? `1px solid ${C.beige}` : "1px solid transparent", transition: "all 0.4s" }}>
       <div style={{ maxWidth: 1140, margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         <div onClick={() => goTo("accueil")} style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: 10 }}>
-          <img src={logoSvg} alt="Loya Conciergerie Bordeaux" style={{ height: 45, width: "auto" }} />
+          <div style={{ width: 42, height: 42, overflow: "hidden", flexShrink: 0 }}>
+            <img src={logoSvg} alt="" style={{ height: 42, width: "auto" }} />
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: C.dark, letterSpacing: "-0.3px", lineHeight: 1 }}>Loya</span>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 10, fontWeight: 600, color: C.sageDark, letterSpacing: "2.5px", textTransform: "uppercase", lineHeight: 1 }}>Conciergerie · Bordeaux</span>
+          </div>
         </div>
         <nav className="nav-desktop" style={{ display: "flex", alignItems: "center", gap: 32 }}>
           {links.map(n => (<span key={n.id} onClick={() => goTo(n.id)} style={{ fontSize: 14, fontWeight: 500, cursor: "pointer", color: page === n.id ? C.terra : C.darkSoft, borderBottom: page === n.id ? `2px solid ${C.terra}` : "2px solid transparent", paddingBottom: 4, transition: "all 0.3s" }}>{n.label}</span>))}
