@@ -6,14 +6,14 @@ Loya est une entreprise bordelaise spécialisée dans la gestion locative courte
 
 ## Pages principales
 
-- [Accueil](https://loya-conciergerie.fr/) — Présentation du service, promesse propriétaire, comment ça marche
-- [Services](https://loya-conciergerie.fr/#services) — Détail des deux formules : sous-location et conciergerie
-- [Contact](https://loya-conciergerie.fr/#contact) — Appel, WhatsApp, email — premier échange gratuit
+- [Accueil](https://loya-conciergerie.com/) — Présentation du service, promesse propriétaire, comment ça marche
+- [Services](https://loya-conciergerie.com/#services) — Détail des deux formules : sous-location et conciergerie
+- [Contact](https://loya-conciergerie.com/#contact) — Appel, WhatsApp, email — premier échange gratuit
 
 ## Services proposés
 
-- [Sous-location professionnelle Bordeaux](https://loya-conciergerie.fr/services.md) — Loyer fixe garanti mensuel, contrat professionnel, zéro gestion
-- [Conciergerie Airbnb Bordeaux](https://loya-conciergerie.fr/services.md) — Gestion complète : annonces, check-in/out, ménage, tarification dynamique
+- [Sous-location professionnelle Bordeaux](https://loya-conciergerie.com/services.md) — Loyer fixe garanti mensuel, contrat professionnel, zéro gestion
+- [Conciergerie Airbnb Bordeaux](https://loya-conciergerie.com/services.md) — Gestion complète : annonces, check-in/out, ménage, tarification dynamique
 
 ## Informations de contact
 

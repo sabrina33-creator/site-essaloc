@@ -30,4 +30,4 @@ User-agent: Googlebot
 Allow: /
 
 # Sitemap
-Sitemap: https://loya-conciergerie.fr/sitemap.xml
+Sitemap: https://loya-conciergerie.com/sitemap.xml
