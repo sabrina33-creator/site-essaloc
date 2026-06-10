@@ -293,10 +293,10 @@ function PageAccueil({ setPage }) {
   ];
 
   const valeurs = [
-    { icon: <Ico.Shield s={28}/>, title: "Sérénité totale", desc: "Fini les appels à minuit et les urgences du dimanche. Vous déléguez tout — on prend tout." },
-    { icon: <Ico.TrendUp s={28}/>, title: "Revenus optimisés", desc: "Tarifs ajustés en temps réel, annonces soignées, calendrier plein. Votre bien travaille pour vous." },
-    { icon: <Ico.Eye s={28}/>, title: "Transparence", desc: "Pas de frais cachés, pas de mauvaises surprises. On vous dit exactement ce qu'on fait — et pourquoi." },
-    { icon: <Ico.Users s={28}/>, title: "Fiabilité", desc: "On s'occupe de chaque logement comme si c'était le nôtre. Réactifs, soigneux, fiables. Toujours." },
+    { icon: <Ico.Shield s={28}/>, title: "Sérénité totale", desc: "Fini les appels à minuit et les urgences du dimanche. Vous déléguez, on prend en charge le reste." },
+    { icon: <Ico.TrendUp s={28}/>, title: "Revenus optimisés", desc: "Tarifs ajustés en temps réel, annonces soignées, calendrier plein. Votre bien rapporte plus, sans effort de votre part." },
+    { icon: <Ico.Eye s={28}/>, title: "Transparence", desc: "Pas de frais cachés, pas de mauvaises surprises. On vous dit exactement ce qu'on fait, et pourquoi." },
+    { icon: <Ico.Users s={28}/>, title: "Fiabilité", desc: "On s'occupe de chaque logement comme si c'était le nôtre. Réactifs et soigneux. Toujours." },
   ];
 
   return (<div>
@@ -314,7 +314,7 @@ function PageAccueil({ setPage }) {
         </FadeIn>
         <FadeIn delay={0.15}>
           <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(34px,6vw,54px)", fontWeight: 700, color: C.white, lineHeight: 1.15, marginBottom: 20 }}>
-            Jusqu'à +40% de revenus locatifs<br/>à <span style={{ color: "#D4956B", fontStyle: "italic" }}>Bordeaux</span> — sans rien gérer
+            Jusqu'à +40% de revenus locatifs<br/>à <span style={{ color: "#D4956B", fontStyle: "italic" }}>Bordeaux</span>. Sans rien gérer.
           </h1>
         </FadeIn>
         <FadeIn delay={0.3}>
@@ -381,7 +381,7 @@ function PageAccueil({ setPage }) {
             Patrimoine UNESCO, gastronomie, vignobles : Bordeaux est l'une des villes les plus demandées en location Airbnb en France. Le marché de la gestion locative courte durée Bordeaux est en pleine croissance.
           </p>
           <p style={{ fontSize: 16, color: C.darkSoft, lineHeight: 1.8 }}>
-            Appartement en centre-ville ou maison en périphérie — votre bien a un potentiel que nous savons exploiter.
+            Appartement en centre-ville ou maison en périphérie, votre bien a un potentiel qu'on sait optimiser.
           </p>
         </FadeIn>
       </div>
@@ -393,7 +393,7 @@ function PageAccueil({ setPage }) {
         <FadeIn><div style={{ textAlign: "center", marginBottom: 56 }}>
           <span style={{ fontSize: 12, color: C.sage, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }}>Nos solutions</span>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(28px,4vw,38px)", fontWeight: 700, color: C.dark, marginTop: 12 }}>Deux offres, <span style={{ color: C.terra, fontStyle: "italic" }}>un même objectif</span></h2>
-          <p style={{ fontSize: 16, color: C.darkSoft, marginTop: 12, maxWidth: 500, margin: "12px auto 0" }}>Gagnez plus. Gérez moins. Choisissez ce qui vous correspond.</p>
+          <p style={{ fontSize: 16, color: C.darkSoft, marginTop: 12, maxWidth: 500, margin: "12px auto 0" }}>Gagnez plus, gérez moins. Choisissez ce qui vous correspond.</p>
         </div></FadeIn>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))", gap: 28 }}>
           {/* Sous-location */}
@@ -401,7 +401,7 @@ function PageAccueil({ setPage }) {
             <div className="loya-card" style={{ background: C.white, borderRadius: 24, padding: "40px 32px", boxShadow: "0 4px 24px rgba(0,0,0,0.05)", height: "100%", borderTop: `4px solid ${C.terra}` }}>
               <div style={{ width: 56, height: 56, borderRadius: 16, background: `${C.terra}12`, display: "flex", alignItems: "center", justifyContent: "center", color: C.terra, marginBottom: 20 }}><Ico.Home s={28}/></div>
               <h3 style={{ fontFamily: "'Playfair Display',serif", fontSize: 22, fontWeight: 700, color: C.dark, marginBottom: 12 }}>Sous-location professionnelle Bordeaux</h3>
-              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Un contrat, un virement fixe chaque mois — peu importe le taux d'occupation. Votre seule responsabilité : encaisser.</p>
+              <p style={{ fontSize: 15, color: C.darkSoft, lineHeight: 1.7, marginBottom: 20 }}>Un contrat, un virement fixe chaque mois. Peu importe le taux d'occupation. Votre seule responsabilité : encaisser.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 {["Loyer garanti mensuel", "Zéro vacance locative", "Gestion complète prise en charge", "Contrat professionnel sécurisé", "Stabilité financière", "Mise en valeur du logement"].map((t,i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 10 }}><Ico.Check/><span style={{ fontSize: 14, color: C.dark }}>{t}</span></div>
@@ -432,7 +432,7 @@ function PageAccueil({ setPage }) {
         <FadeIn><div style={{ textAlign: "center", marginBottom: 64 }}>
           <span style={{ fontSize: 12, color: C.terra, fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }}>Simple & rapide</span>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(28px,4vw,38px)", fontWeight: 700, color: C.dark, marginTop: 12 }}>Comment ça <span style={{ color: C.terra, fontStyle: "italic" }}>marche ?</span></h2>
-          <p style={{ fontSize: 16, color: C.darkSoft, marginTop: 12, maxWidth: 480, margin: "12px auto 0" }}>Trois étapes pour passer de propriétaire stressé à propriétaire serein.</p>
+          <p style={{ fontSize: 16, color: C.darkSoft, marginTop: 12, maxWidth: 480, margin: "12px auto 0" }}>Trois étapes. Pas une de plus.</p>
         </div></FadeIn>
         <div style={{ position: "relative" }}>
           {/* Ligne de connexion desktop */}
@@ -441,7 +441,7 @@ function PageAccueil({ setPage }) {
             {[
               { num: "01", icon: <Ico.Phone s={26}/>, title: "On échange", desc: "Un appel ou un message. On visite votre bien et vous recevez une estimation gratuite sous 24h." },
               { num: "02", icon: <Ico.Key s={26}/>, title: "On s'organise", desc: "On choisit la formule faite pour vous, on signe, on met en route. En moins d'une semaine, c'est parti." },
-              { num: "03", icon: <Ico.TrendUp s={26}/>, title: "Vous encaissez", desc: "On gère, vous encaissez. Chaque mois, votre virement arrive — sans que vous ayez rien eu à faire." },
+              { num: "03", icon: <Ico.TrendUp s={26}/>, title: "Vous encaissez", desc: "On gère, vous encaissez. Chaque mois, votre virement arrive. Vous n'avez rien eu à faire." },
             ].map((s, i) => (
               <FadeIn key={i} delay={i * 0.15}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: "0 12px", position: "relative" }}>
@@ -458,7 +458,7 @@ function PageAccueil({ setPage }) {
           </div>
         </div>
         <FadeIn delay={0.5}><div style={{ textAlign: "center", marginTop: 48 }}>
-          <Btn href={PHONE} bg={C.terra} style={{ boxShadow: `0 4px 20px ${C.terra}40` }}><Ico.Phone/> Démarrer maintenant — c'est gratuit</Btn>
+          <Btn href={PHONE} bg={C.terra} style={{ boxShadow: `0 4px 20px ${C.terra}40` }}><Ico.Phone/> Démarrer maintenant, c'est gratuit</Btn>
         </div></FadeIn>
       </div>
       <style>{`@media(max-width:640px){.steps-line{display:none!important}.steps-grid{grid-template-columns:1fr!important}}`}</style>
@@ -500,12 +500,12 @@ function PageAccueil({ setPage }) {
         </div></FadeIn>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {[
-            { q: "Combien ça coûte ?", a: "Pour la sous-location, aucun frais — nous vous versons un loyer fixe garanti chaque mois. Pour la conciergerie, nous prenons une commission sur les revenus générés. Tout est transparent, sans frais cachés. Contactez-nous pour une estimation personnalisée et gratuite." },
+            { q: "Combien ça coûte ?", a: "Pour la sous-location, aucun frais : nous vous versons un loyer fixe garanti chaque mois. Pour la conciergerie, nous prenons une commission sur les revenus générés. Tout est transparent, sans frais cachés. Contactez-nous pour une estimation personnalisée et gratuite." },
             { q: "Quelle est la différence entre sous-location et conciergerie ?", a: "Avec la sous-location, vous nous confiez votre bien via un bail professionnel : vous recevez un loyer fixe garanti chaque mois, quelle que soit l'occupation. Avec la conciergerie, vous restez propriétaire-loueur et nous gérons tout à votre place (annonces, voyageurs, ménage) en échange d'une commission. La sous-location offre plus de stabilité ; la conciergerie, plus de revenus potentiels." },
             { q: "Puis-je récupérer mon logement quand je veux ?", a: "Oui. Le contrat prévoit des conditions de sortie claires et raisonnables. Nous travaillons sur des engagements adaptés à votre situation, sans vous piéger dans un bail contraignant. On en discute ensemble lors du premier échange gratuit." },
-            { q: "Que se passe-t-il si un voyageur cause des dégâts ?", a: "Airbnb propose une protection hôte jusqu'à 3 millions d'euros. En complément, nous sélectionnons soigneusement les voyageurs et effectuons un état des lieux à chaque départ. Les incidents restent rares — et nous les gérons directement, sans vous solliciter." },
+            { q: "Que se passe-t-il si un voyageur cause des dégâts ?", a: "Airbnb propose une protection hôte jusqu'à 3 millions d'euros. En complément, nous sélectionnons soigneusement les voyageurs et effectuons un état des lieux à chaque départ. Les incidents restent rares, et nous les gérons directement, sans vous solliciter." },
             { q: "Est-ce légal de sous-louer son logement à Bordeaux ?", a: "Oui, sous conditions. Pour un bien dont vous êtes propriétaire, c'est tout à fait légal. Nous opérons dans le strict respect de la réglementation bordelaise et vous accompagnons dans le cadre juridique adapté à votre situation." },
-            { q: "Combien de temps avant de démarrer ?", a: "En général 7 à 14 jours suffisent : visite du bien, photos professionnelles, création ou optimisation des annonces. Dès que le contrat est signé, on s'occupe de tout — vous n'avez plus rien à faire." },
+            { q: "Combien de temps avant de démarrer ?", a: "En général 7 à 14 jours suffisent : visite du bien, photos professionnelles, création ou optimisation des annonces. Dès que le contrat est signé, on s'occupe de tout. Vous n'avez plus rien à faire." },
           ].map((item, i) => (
             <FadeIn key={i} delay={i * 0.05}><FaqItem q={item.q} a={item.a}/></FadeIn>
           ))}
@@ -517,7 +517,7 @@ function PageAccueil({ setPage }) {
     <section style={{ padding: "80px 24px", textAlign: "center", background: `linear-gradient(135deg, ${C.sageDark} 0%, ${C.sage} 100%)`, marginTop: 80 }}>
       <FadeIn>
         <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,36px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Votre bien mérite mieux que la gestion en solo.</h2>
-        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location ou conciergerie — on vous aide à choisir en 15 minutes. Premier échange gratuit, sans engagement.</p>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location ou conciergerie, on vous aide à choisir en 15 minutes. Premier échange gratuit, sans engagement.</p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
           <Btn href={PHONE} bg={C.white} color={C.sageDark}><Ico.Phone/> Appeler maintenant</Btn>
           <Btn onClick={() => { setPage("contact"); window.scrollTo({ top: 0 }); }} bg="transparent" color={C.white} border="2px solid rgba(255,255,255,0.5)" style={{ boxShadow: "none" }}><Ico.Mail/> Nous contacter</Btn>
@@ -645,7 +645,7 @@ function PageServices({ setPage }) {
     <section style={{ padding: "80px 24px", textAlign: "center", background: `linear-gradient(135deg, ${C.sageDark} 0%, ${C.sage} 100%)` }}>
       <FadeIn>
         <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(26px,4vw,34px)", fontWeight: 700, color: C.white, marginBottom: 16 }}>Propriétaire à Bordeaux ? Parlons de votre projet.</h2>
-        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location professionnelle ou conciergerie Bordeaux — on vous guide vers la meilleure option. Premier échange gratuit.</p>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.85)", maxWidth: 460, margin: "0 auto 32px" }}>Sous-location professionnelle ou conciergerie Bordeaux : on vous guide vers la meilleure option. Premier échange gratuit.</p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
           <Btn href={PHONE} bg={C.white} color={C.sageDark}><Ico.Phone/> Appeler maintenant</Btn>
           <Btn onClick={() => { setPage("contact"); window.scrollTo({ top: 0 }); }} bg="transparent" color={C.white} border="2px solid rgba(255,255,255,0.5)" style={{ boxShadow: "none" }}><Ico.Mail/> Nous contacter</Btn>
@@ -713,7 +713,7 @@ function PageContact() {
       <div style={{ maxWidth: 860, margin: "0 auto" }}>
         <FadeIn><div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(24px,3vw,32px)", fontWeight: 700, color: C.dark }}>Choisissez votre <span style={{ color: C.terra, fontStyle: "italic" }}>canal préféré</span></h2>
-          <p style={{ fontSize: 15, color: C.darkSoft, marginTop: 10 }}>Trois façons de nous joindre — toutes sans engagement.</p>
+          <p style={{ fontSize: 15, color: C.darkSoft, marginTop: 10 }}>Trois façons de nous joindre, toutes sans engagement.</p>
         </div></FadeIn>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 20, marginBottom: 56 }}>
