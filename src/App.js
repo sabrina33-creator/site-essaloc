@@ -313,7 +313,7 @@ function PageAccueil({ setPage }) {
     {/* ── HERO ── */}
     <section className="loya-grain" style={{ minHeight: "100vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <img src={IMG.hero} alt="Intérieur chaleureux" style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
+        <img src={IMG.hero} alt="Intérieur chaleureux d'un logement Airbnb à Bordeaux" style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(44,44,44,0.75) 0%, rgba(44,44,44,0.4) 60%, rgba(44,44,44,0.15) 100%)" }}/>
       </div>
       <div style={{ maxWidth: 700, margin: "0 auto", padding: "120px 24px 80px", position: "relative", zIndex: 1 }}>
@@ -750,7 +750,7 @@ function PageContact() {
         {/* Image */}
         <FadeIn delay={0.4}>
           <div style={{ borderRadius: 20, overflow: "hidden", marginTop: 40 }}>
-            <img src={IMG.bordeaux2} alt="Bordeaux" style={{ width: "100%", height: 220, objectFit: "cover", display: "block" }}/>
+            <img src={IMG.bordeaux2} alt="Bordeaux, ville où opère Loya Conciergerie" loading="lazy" style={{ width: "100%", height: 220, objectFit: "cover", display: "block" }}/>
           </div>
         </FadeIn>
       </div>
