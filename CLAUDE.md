@@ -101,10 +101,89 @@ Objectif : 10 000€/mois via création de sites web pour clients locaux (concie
 
 ---
 
-## PROJET 2 — Site Malek (artisan) 🔜 EN COURS
+## PROJET 2 — Site Malek (peintre en bâtiment) 🔜 EN COURS
 
-**Statut :** À créer — suivre le pipeline standard ci-dessus
+**Statut :** Site à créer — suivre le pipeline standard ci-dessus
 **Hébergement prévu :** Netlify (même compte)
+**Métier :** Peintre en bâtiment, Bordeaux et agglomération (30 km)
+
+**Services Malek :**
+- Peinture intérieure (murs, plafonds, boiseries) : 25-40€/m²
+- Peinture extérieure et façades : devis sur place
+- Papiers peints et enduits décoratifs : devis personnalisé
+- Devis gratuit, déplacement sans engagement
+
+**Agent WhatsApp IA — n8n ✅ CRÉÉ**
+- Workflow n8n : `hqKp6XAQfOn33ojN`
+- URL n8n : https://n8n.srv980557.hstgr.cloud/workflow/hqKp6XAQfOn33ojN
+- Webhook test : POST `https://n8n.srv980557.hstgr.cloud/webhook/malek-agent`
+- Body test : `{"phone": "0600000000", "message": "Bonjour, disponible jeudi ?"}`
+
+**Ce que fait l'agent :**
+1. Reçoit les messages WhatsApp des clients
+2. Répond aux questions (tarifs, services, zone)
+3. Vérifie les créneaux disponibles (Google Calendar)
+4. Crée le RDV dans le calendrier si confirmé
+5. Envoie un email à Malek à chaque nouveau RDV
+
+**Stack agent :** n8n + Claude Sonnet 4.6 + Google Calendar OAuth2 + Gmail OAuth2
+
+**À configurer dans n8n :**
+- [ ] Credential "Anthropic API" → clé sk-ant-...
+- [ ] Credential "Google Calendar Malek" → compte Google de Malek (OAuth2)
+- [ ] Credential "Gmail Malek" → Gmail de Malek (OAuth2)
+- [ ] Saisir l'email de Malek dans le noeud "Email Malek — Nouveau RDV"
+
+**À faire dès que Malek a WhatsApp Business :**
+- Remplacer le noeud Webhook par le noeud WhatsApp Business (Meta) ou Twilio
+- Tout le reste du workflow reste intact
+- Option recommandée pour commencer : Twilio sandbox (gratuit, scan QR personnel)
+
+**Reste à faire Malek :**
+- [ ] Créer le site web (pipeline standard 13 étapes)
+- [ ] GMB : en attente autorisation Google
+- [ ] WhatsApp Business → brancher sur le workflow n8n
+- [ ] Créer Google Calendar "Planning Malek"
+
+---
+
+---
+
+## AUTOMATISATION — Agent WhatsApp IA (offre à vendre)
+
+### Repo de référence
+Repo étudié : `https://github.com/Hainrixz/whatsapp-agentkit.git`
+Cloné localement : `C:\Users\User\AppData\Local\Temp\whatsapp-agentkit`
+
+### Stratégie produit
+Vendre un "agent commercial IA WhatsApp 24/7" aux clients locaux (restaurants, artisans, salons, cliniques).
+
+**Grille tarifaire :**
+| Formule | Setup | Mensuel |
+|---------|-------|---------|
+| Starter — FAQ + horaires + contact | 500-800€ | 80-120€ |
+| Pro — Starter + qualif leads + RDV calendrier | 1000-1500€ | 150-250€ |
+| Sur-mesure — intégrations CRM, n8n avancé | 2000-3500€ | 300-500€ |
+
+**Coûts réels par client :** 5-20€/mois (API Claude + hébergement Railway)
+
+### Stack technique retenu (Option n8n — recommandée)
+Pour les RDV et automatisations : **n8n seul** (pas AgentKit Python)
+- Node WhatsApp Business (Meta) ou Twilio
+- Node AI Agent (Claude claude-sonnet-4-6)
+- Node Google Calendar (vérifier dispo + créer RDV)
+- Node Gmail (notifier l'artisan)
+- Mémoire de conversation par numéro de téléphone
+
+### Workflow créé pour Malek
+Voir section PROJET 2 ci-dessus.
+
+### Pour les prochains clients
+1. Dupliquer le workflow Malek dans n8n
+2. Adapter le system prompt (nom, services, tarifs, zone)
+3. Connecter le Google Calendar du client
+4. Brancher WhatsApp Business quand le compte est prêt
+5. Tester avec curl avant de mettre en prod
 
 ---
 
