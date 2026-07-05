@@ -224,3 +224,40 @@ Voir section PROJET 2 ci-dessus.
 
 ## Avis Google — procédure (dès 5 avis disponibles)
 Copier les textes depuis Google Maps → créer section témoignages dans le code (nom, note, texte). Gratuit, 20 min. Option payante : Elfsight ~9€/mois.
+
+---
+
+## PORTFOLIO — Flōw Agency ✅ CRÉÉ
+
+**Nom de l'agence :** Flōw Agency
+**Contact portfolio :** contact.essaloc@gmail.com + wa.me/33783376293
+**Fichier source :** outputs/FLOW-AGENCY.HTM (dans le dossier Claude outputs)
+**Statut :** Base créée, à déployer sur Netlify, à enrichir au fil du temps
+
+**Stack portfolio :**
+- HTML/CSS/JS pur (pas de framework)
+- Dark mode (#09090F), polices Fraunces (titres) + Outfit (corps)
+- Captures d'écran auto via WordPress mshots
+- Scroll reveal au défilement
+
+**Les 3 projets affichés :**
+1. **LOYA Conciergerie** → loya-conciergerie.com (live ✅, GMB ✅)
+2. **By Julie Déco** → byjuliedeco.com (live ✅, GMB ✅, domaine propagation 48h)
+3. **Ocré — Malek** → ocre-peinture.fr (live ✅, GMB en attente validation vidéo)
+
+**Services affichés + tarifs :**
+- Site vitrine React → à partir de 800€
+- Agent IA WhatsApp → à partir de 400€
+- Pack SEO Local → à partir de 300€
+- Pack Visibilité Complète → à partir de 1 400€
+
+**À faire dès que possible :**
+- [ ] Déployer sur Netlify (créer repo ou dossier dédié)
+- [ ] Remplacer captures mshots par vraies screenshots quand les 3 GMB sont validés
+- [ ] Créer profil Malt (malt.fr) avec lien portfolio
+- [ ] Créer profil LinkedIn avec lien portfolio
+- [ ] Ajouter témoignages clients dès premiers avis Google reçus
+- [ ] Ajouter 4e projet quand Malek (ou autre) est complet avec résultats
+
+**GMB — procédure Q&A :**
+Chercher l'établissement sur Google Maps → "Questions & réponses" → poster ses propres questions + réponses (5-8 min). Ajouter photos via business.google.com → Photos.
