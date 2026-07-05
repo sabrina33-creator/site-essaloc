@@ -94,9 +94,32 @@ Objectif : 10 000€/mois via création de sites web pour clients locaux (concie
 - `b2fcf88` — sameAs GMB réel
 - `5c4a4b6` — H1 simplifié (suppression +40%)
 
+**Agent WhatsApp IA — n8n ✅ CRÉÉ (canal Propriétaires)**
+- Workflow n8n : `drUjWfT6rib9zBb3`
+- URL n8n : https://n8n.srv980557.hstgr.cloud/workflow/drUjWfT6rib9zBb3
+- Webhook test : POST `https://n8n.srv980557.hstgr.cloud/webhook/loya-proprio`
+- Body test : `{"phone": "0600000000", "message": "Bonjour, comment fonctionne la conciergerie ?"}`
+
+**Ce que fait l'agent proprio :**
+1. Répond aux questions sur les deux services (sous-location pro vs conciergerie)
+2. Qualifie le prospect (type de bien, statut, situation fiscale)
+3. Traite les objections (légalité, dégâts, impayés, fiscalité micro-BIC)
+4. Vérifie les disponibilités dans Google Calendar
+5. Crée le RDV de visite si prospect chaud
+6. Envoie un email à Sabrina (contact.essaloc@gmail.com) à chaque RDV confirmé
+
+**À configurer dans n8n :**
+- [ ] Credential "Anthropic API" → clé sk-ant-...
+- [ ] Credential "Google Calendar Loya" → compte Google de Sabrina (OAuth2)
+- [ ] Gmail auto-assigné (contact.boholuna@gmail.com) — vérifier que ça correspond au bon compte
+
+**Informations tarifaires agent :**
+- Sous-location : loyer garanti = prix du marché (+50€ max pour bien exceptionnel, +80€ absolu max)
+- Conciergerie : 20% commission, consommables à la charge du proprio
+
 **Reste à faire Loya :**
 - Dès 5 avis Google : section témoignages manuelle
-- Connecter WhatsApp Business + agent IA via n8n
+- Brancher WhatsApp Business sur le workflow n8n dès que prêt (remplacer Webhook par noeud WhatsApp Business)
 - Optimiser fiche GMB (photos, services, description faite)
 
 ---
