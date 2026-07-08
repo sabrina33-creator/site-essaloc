@@ -129,49 +129,21 @@ Objectif : 10 000€/mois via création de sites web pour clients locaux (concie
 
 ---
 
-## PROJET 2 — Site Malek (peintre en bâtiment) 🔜 EN COURS
+## PROJET 2 — Site Malek / Ocré Peinture ✅ LIVE
 
-**Statut :** Site à créer — suivre le pipeline standard ci-dessus
-**Hébergement prévu :** Netlify (même compte)
-**Métier :** Peintre en bâtiment, Bordeaux et agglomération (30 km)
+**Site :** ocre-peinture.fr
+**Stack :** React CRA, src/App.js
+**Repo :** sabrina33-creator/ocre-peinture (GitHub)
+**Hébergement :** Netlify auto-deploy
+**GA4 :** G-QQSXYNBXY2
+**Fonts :** Fraunces (titres) + Figtree (corps)
 
-**Services Malek :**
-- Peinture intérieure (murs, plafonds, boiseries) : 25-40€/m²
-- Peinture extérieure et façades : devis sur place
-- Papiers peints et enduits décoratifs : devis personnalisé
-- Devis gratuit, déplacement sans engagement
+**Contexte complet dans le dossier du projet :**
+→ `C:\Users\User\Desktop\site malek\ocre-peinture\CLAUDE.md`
 
-**Agent WhatsApp IA — n8n ✅ CRÉÉ**
-- Workflow n8n : `hqKp6XAQfOn33ojN`
-- URL n8n : https://n8n.srv980557.hstgr.cloud/workflow/hqKp6XAQfOn33ojN
-- Webhook test : POST `https://n8n.srv980557.hstgr.cloud/webhook/malek-agent`
-- Body test : `{"phone": "0600000000", "message": "Bonjour, disponible jeudi ?"}`
+**Agent WhatsApp n8n :** workflow `hqKp6XAQfOn33ojN` créé, en attente que Malek ait WhatsApp Business. Credentials à configurer quand prêt (voir CLAUDE.md Malek).
 
-**Ce que fait l'agent :**
-1. Reçoit les messages WhatsApp des clients
-2. Répond aux questions (tarifs, services, zone)
-3. Vérifie les créneaux disponibles (Google Calendar)
-4. Crée le RDV dans le calendrier si confirmé
-5. Envoie un email à Malek à chaque nouveau RDV
-
-**Stack agent :** n8n + Claude Sonnet 4.6 + Google Calendar OAuth2 + Gmail OAuth2
-
-**À configurer dans n8n :**
-- [ ] Credential "Anthropic API" → clé sk-ant-...
-- [ ] Credential "Google Calendar Malek" → compte Google de Malek (OAuth2)
-- [ ] Credential "Gmail Malek" → Gmail de Malek (OAuth2)
-- [ ] Saisir l'email de Malek dans le noeud "Email Malek — Nouveau RDV"
-
-**À faire dès que Malek a WhatsApp Business :**
-- Remplacer le noeud Webhook par le noeud WhatsApp Business (Meta) ou Twilio
-- Tout le reste du workflow reste intact
-- Option recommandée pour commencer : Twilio sandbox (gratuit, scan QR personnel)
-
-**Reste à faire Malek :**
-- [ ] Créer le site web (pipeline standard 13 étapes)
-- [ ] GMB : en attente autorisation Google
-- [ ] WhatsApp Business → brancher sur le workflow n8n
-- [ ] Créer Google Calendar "Planning Malek"
+**GMB :** en attente validation vidéo de Malek.
 
 ---
 
