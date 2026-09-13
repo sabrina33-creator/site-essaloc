@@ -1,8 +1,9 @@
 # Portfolio — Flōw Agency
 
+> ⚠️ **Déplacé le 2026-09-13** : le site vit désormais dans son propre repo dédié `flow-agency` (dossier local `C:\Users\User\Desktop\flow-agency`, repo GitHub `sabrina33-creator/flow-agency`), plus dans `essaloc/portfolio/`. Ce fichier reste comme mémoire du contexte commercial (tarifs, synthèse par client) mais n'est plus la source de vérité du contenu du site — voir `flow-agency/README.md` et `flow-agency/gmb-content.md`.
+
 **Nom de l'agence :** Flōw Agency
 **Contact :** contact.essaloc@gmail.com · wa.me/33783376293
-**Fichier source :** `outputs/FLOW-AGENCY.HTM` (dossier Claude outputs)
 
 ## Stack
 HTML/CSS/JS pur (pas de framework) · Dark mode `#09090F` · Fraunces (titres) + Outfit (corps)

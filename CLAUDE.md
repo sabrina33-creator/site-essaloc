@@ -75,4 +75,3 @@ GMB Q&A : Maps → "Questions & réponses" → poster ses propres questions + r�
 
 @docs/template.md
 @docs/agent-whatsapp.md
-@docs/portfolio.md
