@@ -66,3 +66,23 @@
 - [ ] Section témoignages dès 5 avis Google
 - [ ] Q&A Google Maps (5-8 min)
 - [ ] Lighthouse / Core Web Vitals (mesurer)
+- [ ] Revérifier le statut d'indexation des 3 URLs dans Search Console d'ici 2-3 jours
+
+## 2026-09-22 — Indexation initiale sur Google Search Console
+
+**Propriété `https://loya-conciergerie.com/` créée dans Search Console.** Vérification automatique via GA4 non proposée cette fois (contrairement à un autre projet de l'utilisatrice sur un compte Google différent) — passée par la méthode "Balise HTML" à la place. Première tentative de validation échouée : Google avait déclenché la validation via la méthode "Fichier HTML" (par défaut/dernière sélectionnée dans l'UI) alors que la balise meta avait bien été déployée — pas un vrai échec technique, juste la mauvaise section "Valider" cliquée dans l'interface. Validation réussie au second essai en cliquant sur "Valider" dans la section "Balise HTML" spécifiquement.
+
+**Balise `<meta name="google-site-verification" content="CGv3F2_d3CwhgRCxEWzwFyBE2yoscRqbNeyVvCs8HFc" />` ajoutée dans `public/index.html`** (commit `35d1c86`), déployée via Netlify, présence confirmée en ligne par `curl` avant de relancer la validation côté Search Console.
+
+**`sitemap.xml` soumis dans Plans du site**, puis indexation manuelle demandée via "URL Inspection" → "Request indexing" pour les 3 pages du site :
+- `https://loya-conciergerie.com/`
+- `https://loya-conciergerie.com/services`
+- `https://loya-conciergerie.com/contact`
+
+**Facebook et Instagram ajoutés au `sameAs` du schema `LocalBusiness`** (commit `fa2c061`, jusque-là seul le lien GMB y figurait) :
+- `https://www.facebook.com/p/Loya-Conciergerie-61593215099891/`
+- `https://www.instagram.com/loya.conciergerie/`
+
+URLs vérifiées avant ajout (l'utilisatrice avait un doute) : les deux pages confirmées comme appartenant bien à "Loya Conciergerie" / "LOYA Conciergerie" (@loya.conciergerie) via récupération du contenu des pages.
+
+**Précision donnée à l'utilisatrice** : Facebook/Instagram ne peuvent pas être "indexés" via Search Console (propriété limitée aux domaines possédés/vérifiés) — le `sameAs` sert uniquement à renforcer l'association d'entité pour Google, pas à forcer une indexation.
