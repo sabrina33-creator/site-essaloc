@@ -2,13 +2,13 @@
 
 > Service de conciergerie et sous-location professionnelle à Bordeaux (France). Loya gère votre logement Airbnb à votre place pour maximiser vos revenus locatifs sans aucune gestion de votre part.
 
-Loya est une entreprise bordelaise spécialisée dans la gestion locative courte durée. Nous proposons deux formules aux propriétaires de Bordeaux et ses alentours : la sous-location professionnelle (loyer fixe garanti chaque mois) et la conciergerie Airbnb (gestion complète en échange d'une commission). Les propriétaires peuvent gagner jusqu'à +40% de revenus supplémentaires par rapport à une gestion classique.
+Loya est une entreprise bordelaise spécialisée dans la gestion locative courte durée. Nous proposons deux formules aux propriétaires de Bordeaux et ses alentours : la sous-location professionnelle (loyer fixe garanti chaque mois) et la conciergerie Airbnb (gestion complète en échange d'une commission). Les propriétaires optimisent leurs revenus locatifs par rapport à une gestion classique, sans avoir à s'en occuper ; une estimation chiffrée est donnée gratuitement selon le bien, lors de la première visite.
 
 ## Pages principales
 
 - [Accueil](https://loya-conciergerie.com/) — Présentation du service, promesse propriétaire, comment ça marche
-- [Services](https://loya-conciergerie.com/#services) — Détail des deux formules : sous-location et conciergerie
-- [Contact](https://loya-conciergerie.com/#contact) — Appel, WhatsApp, email — premier échange gratuit
+- [Services](https://loya-conciergerie.com/services) — Détail des deux formules : sous-location et conciergerie
+- [Contact](https://loya-conciergerie.com/contact) — Appel, WhatsApp, email — premier échange gratuit
 
 ## Services proposés
 
@@ -26,6 +26,6 @@ Loya est une entreprise bordelaise spécialisée dans la gestion locative courte
 ## Données clés
 
 - Délai de démarrage : 7 à 14 jours après signature
-- Revenus supplémentaires : jusqu'à +40% par rapport à une gestion non optimisée
+- Revenus : optimisés par rapport à une gestion non optimisée ; chiffre précis donné après estimation gratuite du bien, lors de la première visite
 - Premier échange : gratuit, sans engagement
 - Protection voyageurs : garantie hôte Airbnb jusqu'à 3 millions d'euros

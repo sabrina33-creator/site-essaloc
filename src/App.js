@@ -438,7 +438,7 @@ function PageAccueil() {
           <div style={{ position: "absolute", top: 40, left: "16.66%", right: "16.66%", height: 2, background: `linear-gradient(to right, ${C.terra}40, ${C.sage}40)`, zIndex: 0 }} className="steps-line"/>
           <div className="steps-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24, position: "relative", zIndex: 1 }}>
             {[
-              { num: "01", icon: <Ico.Phone s={26}/>, title: "On échange", desc: "Un appel ou un message. On visite votre bien et vous recevez une estimation gratuite sous 24h." },
+              { num: "01", icon: <Ico.Phone s={26}/>, title: "On échange", desc: "Un appel ou un message. On visite votre bien et vous recevez une estimation gratuite sous 24h, dès que nous avons les informations nécessaires (emplacement, photos...)." },
               { num: "02", icon: <Ico.Key s={26}/>, title: "On s'organise", desc: "On choisit la formule faite pour vous, on signe, on met en route. En moins d'une semaine, c'est parti." },
               { num: "03", icon: <Ico.TrendUp s={26}/>, title: "Vous encaissez", desc: "On gère, vous encaissez. Chaque mois, votre virement arrive. Vous n'avez rien eu à faire." },
             ].map((s, i) => (
